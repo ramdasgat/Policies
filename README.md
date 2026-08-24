@@ -15,9 +15,14 @@ free-tier host.
 Once Pages is switched on, each folder is served at its own address:
 
 ```
-https://<username>.github.io/policies/            → this index
-https://<username>.github.io/policies/pagenova/   → PageNova
+https://<username>.github.io/Policies/            → this index
+https://<username>.github.io/Policies/pagenova/   → PageNova
 ```
+
+> **The path is case-sensitive.** The repo is named `Policies`, so the live
+> address is `https://ramdasgat.github.io/Policies/` with a capital P.
+> `.../policies/` returns 404. Paste the wrong case into Play Console and the
+> reviewer sees a dead link, which is a rejection.
 
 Substitute your GitHub username. The URL is stable as long as the repo and the
 folder name stay put — so once one is pasted into a Play listing, do not rename
@@ -53,6 +58,7 @@ Play listing and in the app.
 | Folder | App | Source of truth |
 |---|---|---|
 | `pagenova/` | PageNova (`com.ramdas.pagenova`) | `LitePdfReader/playstore/privacy-policy.md`, rendered to `privacy-policy.html` |
+| _(its own repo)_ | ChaarPaisa (`com.chaarpaisa`) | `ChaarPaisa/Playstore/privacy-policy/privacy-policy.md`, published to the standalone `chaarpaisa-privacy` repo |
 
 The app repo holds the markdown the policy is written in; the HTML here is the
 published form of it. If a policy changes, change it in the app repo too, so
