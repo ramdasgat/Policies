@@ -1,0 +1,4 @@
+# app-ads.txt for PageNova (com.ramdas.pagenova)
+# Authorises Google AdMob to sell ad inventory for this app.
+# Publisher ID must match the AdMob account that owns the app.
+google.com, pub-2839980578948532, DIRECT, f08c47fec0942fa0
